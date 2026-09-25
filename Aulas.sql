@@ -83,6 +83,12 @@ SELECT * FROM produtos WHERE preco BETWEEN 10 AND 30;
 
 SELECT * FROM produtos WHERE nome_produto = 'arroz';
 
+SELECT * FROM produtos WHERE preco > 10 AND qtde_estoque > 10;
+
+SELECT * FROM produtos WHERE nome_produto = 'arroz' OR nome_produto = 'leite';
+
+SELECT * FROM produtos WHERE nome_produto LIKE '%eite%';
+
 SELECT * FROM clientes;
 
 UPDATE clientes
@@ -97,6 +103,3 @@ DELETE FROM produtos
 WHERE nome_produto = 'feijao';
 
 SELECT * FROM produtos;
-
-
-
